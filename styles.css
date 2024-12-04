@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.nav_text {
+  font-weight: 800;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 20px;
+}
+.main_image {
+  height: 85vh;
+  width: 95vw;
+  transition: transform 0.3s ease;
+}
+
+.main_container_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_image:hover {
+  transform: scale(1.01);
+}
+.collection_disney_container {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+.collection_image {
+  height: 440px;
+  width: 380px;
+  transition: transform 0.3s ease;
+}
+.collection_img_container {
+  position: relative;
+}
+
+.text_on_collection_img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 80px;
+  height: 80px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(14, 12, 12, 0.068),
+    rgb(22, 21, 21)
+  );
+}
+.text_on_collection_img > p {
+  font-weight: 800;
+  font-size: large;
+  color: rgb(245, 243, 243);
+}
+
+.collection_image:hover {
+  transform: scale(1.02);
+}
+
+.features_add_container {
+  height: 85vh;
+  width: 95vw;
+  background-color: rgb(235, 230, 225);
+  display: flex;
+  margin: 0px 30px 0px 30px;
+  padding: 40px 80px;
+  flex-direction: column;
+}
+
+.features_add_container > p {
+  font-size: xx-large;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.add-text {
+  margin: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-text-title {
+  font-size: x-large;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.img-hover-add {
+  transition: transform 0.3s ease;
+}
+
+.img-hover-add:hover {
+  transform: scale(1.02);
+}
+
+.images {
+  display: flex;
+}
+
+.add-text-des {
+  font-size: medium;
+  font-weight: 300;
+}
+.holiday {
+  height: 400px;
+  width: 500px;
+  padding: 10px;
+}

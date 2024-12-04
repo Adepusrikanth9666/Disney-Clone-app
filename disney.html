@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Disney.in</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <nav class="nav_container">
+          <p>
+            <img
+              src="data:image/png;base64,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"
+              alt="disney_image"
+              width="120px"
+              height="120px"
+            />
+          </p>
+          <p class="nav_text" id="parks">PARKS</p>
+          <p class="nav_text">CRUISE</p>
+          <p class="nav_text">WHAT'S NEW</p>
+        </nav>
+      </div>
+      <div class="main_container_image">
+        <img
+          class="main_image"
+          src="	https://lumiere-a.akamaihd.net/v1/images/dcl_desktop_in_unlimited_d3aa26fd.jpeg?region=0,0,2000,835"
+          alt="disney_main_image"
+        />
+      </div>
+      <div class="collection_disney_container">
+        <div class="collection_img_container">
+          <img
+            class="collection_image"
+            src="https://i.pinimg.com/736x/17/8d/76/178d764b4e40dd539967b943413f48c4.jpg"
+            alt=""
+          />
+          <div class="text_on_collection_img">
+            <p>Disney x Ginger</p>
+            <p>SHOP NOW</p>
+          </div>
+        </div>
+        <div class="collection_img_container">
+          <img
+            class="collection_image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ--lSNZqgh7eSRxKMlh7tkKxpco7Kwb40mw&s"
+            alt=""
+          />
+          <div class="text_on_collection_img">
+            <p>Disney x Ginger</p>
+            <p>SHOP NOW</p>
+          </div>
+        </div>
+        <div class="collection_img_container">
+          <img
+            class="collection_image"
+            src="https://i5.walmartimages.com/seo/Disney-Men-s-Apparel-Graphic-Hoodie-Sweatshirt-Mickey-Mouse-Stand-Sizes-XS-3XL-Men-s-Big-Tall_a2a6abaf-f460-4120-b2b6-1c648ba08a56.eb994a399fe6bc9028a6c69076078470.jpeg?odnHeight=432&odnWidth=320&odnBg=FFFFFF"
+            alt=""
+          />
+          <div class="text_on_collection_img">
+            <p>Disney x Ginger</p>
+            <p>SHOP NOW</p>
+          </div>
+        </div>
+        <div class="collection_img_container">
+          <img
+            class="collection_image"
+            src="https://i.pinimg.com/736x/17/8d/76/178d764b4e40dd539967b943413f48c4.jpg"
+            alt=""
+          />
+          <div class="text_on_collection_img">
+            <p>Disney x Ginger</p>
+            <p>SHOP NOW</p>
+          </div>
+        </div>
+      </div>
+      <div class="features_add_container">
+        <p>Featured Ads</p>
+        <div class="images">
+          <div>
+            <img
+              class="img-hover-add"
+              src="https://lumiere-a.akamaihd.net/v1/images/900x540_dit_2bbf385b.jpeg?region=0,0,960,540&width=750"
+              alt="features_image"
+            />
+            <div class="add-text">
+              <p class="add-text-title">Disney Imagine That | Disney Channel</p>
+            </div>
+          </div>
+          <div>
+            <iframe
+              width="680"
+              height="420"
+              src="https://secure.disney.com/embed/5b6a7f9cff09bebd6b4f2a72?domain=www.disney.in"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
+            <div class="add-text">
+              <p class="add-text-title">Marvel’s Spider-Man</p>
+              <p class="add-text-des">
+                When new foes threaten the city, a new web-slinger arises as
+                Spider-Man. Marvel’s Spider-Man: Miles Morales has arrived on
+                PlayStation 4 and PlayStation 5. Get the <br />
+                game now: http://amzn.to/35buWpS <br />
+                #BeGreater #BeYourself #MilesMorales
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features_add_container">
+        <p>Explore Disney Holidays</p>
+        <div class="images">
+          <div>
+            <img
+              class="img-hover-add holiday"
+              src="https://www.shutterstock.com/image-photo/3d-character-robot-cherry-blossom-260nw-2529906265.jpg"
+              alt="features_add_image"
+            />
+            <div class="add-text">
+              <p class="add-text-title">Legends of the Force<br /></p>
+              <strong>DISCOVER NOW AT DISNEYLAND® PARIS</strong>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img-hover-add holiday"
+              src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2023/03/Indian-Holiday.jpg"
+              alt="features_add_image"
+            />
+
+            <div class="add-text">
+              <p class="add-text-title">14 Day Ticket at a 7 Day Price<br /></p>
+              <strong> BOOK WITH WALT DISNEY WORLD</strong>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img-hover-add holiday"
+              src="https://bsmedia.business-standard.com/_media/bs/img/article/2018-06/03/full/1528032172-4904.jpg"
+            />
+            <div class="add-text">
+              <p class="add-text-title">Find Your Perfect Holiday <br /></p>
+              <strong>BOOK WITH DISNEY CRUISE LINE</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features_add_container">
+        <p>More From Disney</p>
+        <div class="images">
+          <div>
+            <img
+              class="img-hover-add"
+              src="https://eu-images.contentstack.com/v3/assets/blt8770191dea35bccc/bltd1753508314ad34a/64d38fe6c1962a62330e1d18/1201mickey.jpg?width=800&auto=webp&quality=95&format=jpg&disable=upscale"
+            />
+            <div class="add-text">
+              <p class="add-text-title">Legends of the Force<br /></p>
+              <strong>DISCOVER NOW AT DISNEYLAND® PARIS</strong>
+            </div>
+          </div>
+
+          <div>
+            <img
+              class="img-hover-add"
+              src="https://eu-images.contentstack.com/v3/assets/blt8770191dea35bccc/bltd1753508314ad34a/64d38fe6c1962a62330e1d18/1201mickey.jpg?width=800&auto=webp&quality=95&format=jpg&disable=upscale"
+            />
+            <div class="add-text">
+              <p class="add-text-title">Find Your Perfect Holiday <br /></p>
+              <strong>BOOK WITH DISNEY CRUISE LINE</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- start coading from Here!!!! -->
+      <div class="footer">
+        <div class="1">
+          <div class="1.1"></div>
+          <div class="1.2"></div>
+        </div>
+        <div class="2">
+          <div class="2.1">Image</div>
+          <div class="2.2">
+            <div class="2.2.1">
+              <p>p</p>
+              <p>p</p>
+              <p>p</p>
+            </div>
+          </div>
+        </div>
+        <div class="3">
+          <p>copy right</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
